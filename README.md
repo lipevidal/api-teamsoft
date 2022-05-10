@@ -1,9 +1,11 @@
-# api-teamsoft
+# Api Teamsoft
 
-Escolhi o Adonis como Framwork para trabalhar neste projeto. E junto com o Adonis escolhi o typescript.
+Foi escolhido o Adonis como Framwork para trabalhar neste projeto. E junto com o Adonis foi escolhido o typescript.
 Para iniciar um projeto Adonis com typescript, foi usado o seguinte comando:
 
+```
 npm init adonis-ts-app@latest api-teamsoft
+```
 
 Para manipular o banco de dados mysql, escolhi o docker, que basicamente permite trabalhar com banco de dados sem a necessidade de ter que baixar o banco de dados MySql em minha máquina.
 Para trabalhar com o banco de dados no docker, é preciso criar um container contendo este banco de dados dentro dele. Para isso criei o seguinte arquivo na raiz do projeto:
