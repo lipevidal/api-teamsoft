@@ -24,10 +24,10 @@ O próximo passo foi conectar o Adonis com o banco de dados. Porém por padrão,
 npm install @adonisjs/lucid
 ```
 
-Lucid é o nome do ORM do Adonis. O ORM permite trabalhar com o MySQL sem a necessidade de escrever uma linha de código SQL. Mas para usá-lo, além de instalar é preciso configurar, para isso foi usado o seguinte comando para configurá-lo:
+Lucid é o nome do ORM do Adonis. O ORM permite trabalhar com o MySQL sem a necessidade de escrever uma linha de código SQL. Mas para usá-lo, além de instalar é preciso configurar, para isso foi usado o seguinte comando:
 
 ```
 node ace configure @adonis/lucid
 ```
 
-E por fim através desse comando foi gerado variáveis de configuração e que foi copiadas e coladas arquivo **env.ts** que é o responsável em fazer a conexão do Adonis com o banco de dados.
+E por fim através desse comando foi gerado variáveis de configurações que foram copiadas e coladas arquivo **env.ts** que é o responsável em fazer a conexão do Adonis com o banco de dados.
