@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  database:
+    image: mysql
+    container_name: api-teamsoft
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 'abc'
+      MYSQL_DATABASE: 'teamsoft'
+    ports:
+      -  '3306:3306'
