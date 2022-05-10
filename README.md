@@ -41,3 +41,15 @@ Para criar a tabela de clientes no banco de dados, foi usado o seguinte comando:
 node ace make:migration clients
 ```
 
+O mesmo foi feito para a criação da tabela de endereço, porém alterando somente o nome da tabela
+
+```
+node ace make:migration addresses
+```
+
+Em seguida foi criado as colunas das tabelas. Mas essas teabelas precisam se relacionar, pois um cliente pode ter vários endereços e um endereço pertence a um cliente. Por isso foi criado um relacionamento Belongs To e Has Many
+e após usado o seguinte comando para gerar as tabelas no banco de dados
+
+```
+node ace migration:run
+```
