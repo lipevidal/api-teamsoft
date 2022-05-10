@@ -4,7 +4,7 @@
 
 Foi escolhido o Adonis como Framwork para trabalhar neste projeto. E junto com o Adonis foi escolhido o typescript.
 
-Para iniciar um projeto Adonis com typescript, foi usado o seguinte comando:
+Para iniciar um projeto **api teamsoft** usando o Adonis com typescript, foi usado o seguinte comando:
 
 ```
 npm init adonis-ts-app@latest api-teamsoft
@@ -27,7 +27,17 @@ npm install @adonisjs/lucid
 Lucid é o nome do ORM do Adonis. O ORM permite trabalhar com o MySQL sem a necessidade de escrever uma linha de código SQL. Mas para usá-lo, além de instalar é preciso configurar, para isso foi usado o seguinte comando:
 
 ```
-node ace configure @adonis/lucid
+node ace configure @adonisjs/lucid
 ```
 
-E por fim através desse comando foi gerado variáveis de configurações que foram copiadas e coladas arquivo **env.ts** que é o responsável em fazer a conexão do Adonis com o banco de dados.
+Através desse comando foi gerado variáveis de configurações que foram copiadas e coladas no arquivo **env.ts** que é o responsável em fazer a conexão do Adonis com o banco de dados.
+E por fim, foi acrescentado as informações reais no arquivo .env com base nas configurações criadas anteriormente.
+
+### Criando tabelas do Banco de Dados
+
+Para criar a tabela de clientes no banco de dados, foi usado o seguinte comando:
+
+```
+node ace make:migration clients
+```
+
