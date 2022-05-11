@@ -47,8 +47,9 @@ O mesmo foi feito para a criação da tabela de endereço, porém alterando some
 node ace make:migration addresses
 ```
 
-Em seguida foi criado as colunas das tabelas. Mas essas teabelas precisam se relacionar, pois um cliente pode ter vários endereços e um endereço pertence a um cliente. Por isso foi criado um relacionamento Belongs To e Has Many
-e após usado o seguinte comando para gerar as tabelas no banco de dados
+Em seguida foi criado as colunas das tabelas. Mas essas teabelas precisam se relacionar, pois um cliente pode ter vários endereços e um endereço pertence a um cliente. Por isso foi criado um relacionamento na tabela de endereço que faz referencia a tabela de clientes indicando que um endereço pertence a um cliente.
+
+Após essas edições foi usado o seguinte comando para gerar as tabelas no banco de dados
 
 ```
 node ace migration:run
