@@ -33,7 +33,7 @@ node ace configure @adonisjs/lucid
 Através desse comando foi gerado variáveis de configurações que foram copiadas e coladas no arquivo **env.ts** que é o responsável em fazer a conexão do Adonis com o banco de dados.
 E por fim, foi acrescentado as informações reais no arquivo .env com base nas configurações criadas anteriormente.
 
-### Criando tabelas do Banco de Dados
+### Criando tabelas no Banco de Dados
 
 Para criar a tabela de clientes no banco de dados, foi usado o seguinte comando:
 
@@ -54,3 +54,6 @@ Após essas edições foi usado o seguinte comando para gerar as tabelas no banc
 ```
 node ace migration:run
 ```
+### Criando Models
+
+Neste projeto esta sendo usado o ORM do Adonis. Por causa disso, quando for preciso buscar, criar, editar ou deletar dados do banco de dados, em vez de usar códigos SQL, será usado o Models que fará todas as solicitações do banco de dados de forma automática. 
