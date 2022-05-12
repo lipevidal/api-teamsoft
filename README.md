@@ -81,4 +81,17 @@ show, para exibir um cliente em específico,
 update para atualizar informações de um cliente específico e
 destroy, para excluir um cliente.
 
-O método store é onde se recebe os dados da requisição para serem salvos no banco de dados. Porém esses dados podem vir com erros caso o usuário digite alguma informação errada em um determinado campo. Por isso é preciso validar esses dados.
+### Validators
+
+No controller o método store é onde se recebe os dados da requisição para serem salvos no banco de dados. Porém esses dados podem vir com erros caso o usuário digite alguma informação errada em um determinado campo. Por isso é preciso validar esses dados. Para validar os dados vindo do frontend usamos o Validator. 
+Para gerar o validator foi usado o comando:
+
+```
+node ace make:validator Client
+```
+
+```
+node ace make:validator Address
+```
+
+Nesse arquivo, definimos os campos vindo da requisição e as regras que ele precisa ter. Se o usuário não respeitar essas regras, é retornado pra ele uma mensagem de erro.
