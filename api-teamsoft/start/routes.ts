@@ -20,4 +20,13 @@
 
 import Route from '@ioc:Adonis/Core/Route'
 
-Route.resource('/clients', 'ClientsController').apiOnly()
+Route.get('/clients', 'ClientsController.index')
+Route.post('/clients', 'ClientsController.store')
+Route.get('/clients/:id', 'ClientsController.show')
+Route.put('/clients/:id', 'ClientsController.update')
+Route.delete('/clients/:id', 'ClientsController.destroy')
+Route.get('/clients/:id/addresses', 'AddressesController.index')
+Route.post('/clients/:id/addresses', 'AddressesController.store')
+Route.get('/clients/:id/addresses/:key', 'AddressesController.show')
+Route.put('/clients/:id/addresses/:key', 'AddressesController.update')
+Route.delete('/clients/:id/addresses/:key', 'AddressesController.destroy')

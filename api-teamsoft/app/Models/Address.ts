@@ -34,7 +34,7 @@ export default class Address extends BaseModel {
   public longitude: string
 
   @column()
-  public clientId: string
+  public clientId: number
 
   @belongsTo(() => Client)
   public client: BelongsTo<typeof Client>
@@ -45,17 +45,3 @@ export default class Address extends BaseModel {
   @column.dateTime({ autoCreate: true, autoUpdate: true })
   public updatedAt: DateTime
 }
-
-// table
-//   .integer('clients_id')
-//   .unsigned()
-//   .references('id')
-//   .inTable('clients')
-//   .onUpdate('CASCADE')
-//   .onDelete('CASCADE')
-
-// /**
-//  * Uses timestamptz for PostgreSQL and DATETIME2 for MSSQL
-//  */
-// table.timestamp('created_at', { useTz: true })
-// table.timestamp('updated_at', { useTz: true })
