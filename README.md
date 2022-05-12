@@ -79,4 +79,6 @@ Foi criado os métodos index, que serve para listar todos os clientes,
 store, para salvar novos clientes,
 show, para exibir um cliente em específico,
 update para atualizar informações de um cliente específico e
-destroy, para excluir um cliente
+destroy, para excluir um cliente.
+
+O método store é onde se recebe os dados da requisição para serem salvos no banco de dados. Porém esses dados podem vir com erros caso o usuário digite alguma informação errada em um determinado campo. Por isso é preciso validar esses dados.
