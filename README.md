@@ -110,3 +110,7 @@ node ace make:validator Address
 ```
 
 Nesse arquivo, definimos as regras que cada dado vindo da requisição precisa ter. Se o usuário não respeitar essas regras, é retornado pra ele uma mensagem de erro.
+
+### Routes
+
+Por fim foi gerado as rotas que definem onde o usuário vai requisitar os dados.
