@@ -10,7 +10,7 @@ export default class Address extends BaseModel {
   public street: string
 
   @column()
-  public number: number
+  public number: string
 
   @column()
   public complement: string
@@ -25,7 +25,7 @@ export default class Address extends BaseModel {
   public state: string
 
   @column()
-  public cep: number
+  public cep: string
 
   @column()
   public latitude: string

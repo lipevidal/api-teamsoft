@@ -8,10 +8,10 @@ export default class ClientsController {
     return clients
   }
 
-  public async store({ request }: HttpContextContract) {
+  public async store({ request, response }: HttpContextContract) {
     const data = await request.validate(ClientValidator)
     const client = await Client.create(data)
-    return client
+    return response.created({ client })
   }
 
   public async show({ params }: HttpContextContract) {
